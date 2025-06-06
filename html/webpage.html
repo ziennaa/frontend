@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!--tells the web browser that file contains html code not a html tag-->
+<html>
+<head>
+    <!-- defines metadata which is used by web browsers
+    and search engines information include title
+character set styles 
+contents of head is not displayed to user-->
+<title>Thomas J. Watson Sr - Fan Page</title>
+</head>
+<body>
+    <h1>THOMAS J. WATSON</h1>
+    <img src=""https://upload.wikimedia.org/wikipedia/commons/7/7e/Thomas_J_Watson_Sr.jpg" width="300" height="300">
+    <!-- <p>used to define a paragraph</p>-->
+    <p>Thomas J. Watson, Sr. is the American industrialist, who built the International Business Machines Corporation (<a href="https://www.ibm.com">IBM</a>) into the largest manufacturer of electric typewriters and data-processing equipment in the world.</p>
+    <!-- <img> used to add image
+        src? attributes a specific an external resource that
+        you want to link such as url of an image -->
+    <!-- 
+        LIST
+        <ol></ol> creates ordered list numbered
+        <li></li> each point enclosed represts list item same for ordered or unordered
+        <ul></ul> created unordered list
+    -->
+    <ul>
+        <li>In 1939, he received an honorary degree in Doctor of Commercial Science from Oglethorpe University. </li>
+        <li>In 1940s, Watson was on the national executive board of the Boy Scouts of America. </li>
+        <li>Watson served as a trustee of Columbia University from June 6, 1933, until his death. </li>
+        <li>He was posthumously inducted into the Junior Achievement U.S. Business Hall of Fame in 1990.</li>
+    </ul>
+    <!-- table
+        <table></table> tag is used
+        <tr></tr> represents table row
+        <th></th> table heading
+        <td></td> table data each element specified using this
+    -->
+    <h2>IBM Growth Over Years: </h2>
+    <table>
+        <tr>
+            <th>Year </tr>
+            <th>No. of Employees</th>
+            <th>Gross Income(In m$)</th>
+        </tr>
+        <tr>
+            <td>1925</td>
+            <td>3698</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>1930</td>
+            <td>6346</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>1935</td>
+            <td>8651</td>
+            <td>21</td>
+        </tr>
+    </table>
+    <!--   
+        <form></form> defines structure of the form act as a container for all form related elements
+        it specifies ho the collected data should be submitted
+        <input> collects user input through various types such as text email password and more allowing for single line 
+        data entry
+        <textarea> allows users to input larger amount of text such as comment or feedback providing
+            a scrollable multi line input area
+        <button> used to trigger specific action such as resetiing or submitting a form determined by type attreibutr
+        <label> provides textual description or 
+ext for form controls  
+                <fieldset> group elements in a form logically organising them
+                    <used with<legend> to descrube them>
+-->
+<h3> Insights Submission Form </h2>
+    <form action="/Submit-Feedback" method="POST">
+        <fieldset>
+            <legend>Your insights about Thomas J. Watson are Values</legend>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+            <label for="email">Email<label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br></br>
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Share your thoughts about Thomas J. Watson"></textarea><br><br>
+            <button type="Submit">SUBMIT</button>
+            </fieldset>
+        </form>
+</body>
+</html>
